@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Data Analyst Dashboard</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#reports">Reports</a></li>
+      <li><a href="#settings">Settings</a></li>
+    </ul>
+  </nav>
+  <section id="home" class="main-content">
+    <h2>Welcome to Data Analyst Dashboard</h2>
+    <p>This dashboard provides you with insightful analytics and reports to help you make data-driven decisions.</p>
+
+    <form id="dataForm">
+      <div class="form-group">
+        <label for="inputData">Input Data:</label>
+        <input type="text" id="inputData" name="inputData" placeholder="Enter your data...">
+      </div>
+      <div class="form-group">
+        <label for="selectOption">Select Option:</label>
+        <select id="selectOption" name="selectOption">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="chart-container">
+      <canvas id="revenueChart"></canvas>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Data Analyst Dashboard. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
